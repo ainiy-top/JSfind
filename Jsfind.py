@@ -1,6 +1,6 @@
 #!/usr/bin/env python"
 # coding: utf-8
-# author: carrypan
+# author: 芋圆
 import requests, argparse, sys, re
 from requests.packages import urllib3
 from urllib.parse import urlparse
