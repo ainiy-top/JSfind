@@ -19,7 +19,6 @@ def parse_args():
     parser = argparse.ArgumentParser(epilog=None)
     parser.add_argument("-u", "--url", help="The website")
     parser.add_argument("-f", "--file", help="The file contains url or js")
-    parser.add_argument("-o", "--outputurl", help="Output file name url.")
     parser.add_argument("-w", "--web", help="web. ",action="store_true")
     parser.add_argument("-s", "--screenweb", help="screenweb ", action="store_true")
     return parser.parse_args()
