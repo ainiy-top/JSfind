@@ -231,7 +231,12 @@ if __name__ == "__main__":
     if args.file != None:
         urls = find_by_file(args.file)
     if args.web == True:
-        asyncio.run(main())
-        if args.screenweb == True:
-            jsfind()
+        with open('result.txt', "r") as f:
+            content = f.read()
+            if content:
+                asyncio.run(main())
+                if args.screenweb == True:
+                    jsfind()
+            else:
+                pass
 
